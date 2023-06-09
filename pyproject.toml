@@ -16,6 +16,10 @@ python-dotenv = "^1.0.0"
 sentry-sdk = {extras = ["django"], version = "^1.25.0"}
 
 
+[tool.poetry.group.development.dependencies]
+django-stubs = "^4.2.1"
+djangorestframework-stubs = "^3.14.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
