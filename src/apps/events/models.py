@@ -1,7 +1,7 @@
 from django.db import models
 from django_extensions.db.models import TimeStampedModel
 
-from apps.users.models import User
+from src.apps.users.models import User
 
 
 class Event(TimeStampedModel):
