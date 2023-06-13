@@ -3,8 +3,8 @@ from django.urls import include, path
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from src.apps.users.views import UserViewSet
-from src.apps.events.views import EventViewSet
+from src.apps.users.api.views import UserViewSet
+from src.apps.events.api.views import EventViewSet
 
 
 router = routers.SimpleRouter()
