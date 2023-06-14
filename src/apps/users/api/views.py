@@ -1,7 +1,7 @@
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
 
-from .models import User
+from src.apps.users.models import User
 from .serializers import UserSerializer
 
 

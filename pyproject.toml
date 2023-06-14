@@ -2,9 +2,12 @@
 name = "ruslan-schedule"
 version = "0.1.0"
 description = ""
-authors = ["Anzor <magometov_a.z@mail.ru>"]
+authors = [
+  "Anzor <magometov_a.z@mail.ru>",
+  "Ruslan <shaggybackend@gmail.com>"
+]
 readme = "README.md"
-packages = [{include = "ruslan_schedule"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -14,6 +17,7 @@ djangorestframework-simplejwt = "^5.2.2"
 djangorestframework-camel-case = "^1.4.2"
 python-dotenv = "^1.0.0"
 sentry-sdk = {extras = ["django"], version = "^1.25.0"}
+django-extensions = "^3.2.3"
 
 
 [tool.poetry.group.development.dependencies]
@@ -24,3 +28,6 @@ pre-commit = "^3.3.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dj = "src.manage:main"
