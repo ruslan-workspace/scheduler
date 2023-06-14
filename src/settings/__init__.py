@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     # our applications
     "src.apps.users",
     "src.apps.events",
+    "src.apps.invitations",
 ]
 
 MIDDLEWARE = [
